@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<br>
+<br>
+<br>
+<h1 class="pap">Paso A Paso</h1>
+    <div class="container">
+        <ul class="slider">
+            <li id="slide1">
+                <br>
+                <br>
+                <hr size="2" color="black" width="75%">
+                <h1>Prefijo y Sufijo<br>Nomenclatura IUPAC</h1>
+                <br>
+                <h2>Hecho Por:</h2>
+                <h3>Sara Hernandez</h3>
+                <h3>Gabriela Gutierrez</h3>
+                <h3>Julian Echeverri</h3>
+                <br>
+                <br>
+                <hr size="2" color="black" width="75%">
+            </li>
+
+            <li id="slide2">
+                <h1>Estado de oxidacion: UNICO</h1>
+                <p>Los estados de oxidacion pueden variar, sin embargo si su Estado de oxidacion es unico osea que solo es uno, por lo tanto se utiliza el sufijo ICO. <br> <strong>Por Ejemplo</strong> </p>
+
+                <article class="span__example">
+                    <h1>Rb</h1>
+                    <h4>+1</h4>
+                </article>
+                <h3>Rubidico</h3>
+                <p>Aqui podemos ver el elemento quimico del Rubidio(Rb), junto con su numero de oxidacion que en este caso es unico. <br> Por esto se llamaria RubidICO en vez de Rubidio</p>
+            </li>
+
+            <li id="slide3">
+                <h1>Estado de oxidacion: 2 MAYOR-MENOR</h1>
+                <p>Si los valores de un numero de oxidacion son exactamente 2 se utilizan los sufijos ICO para el menor y OSO para el mayor.<br><br> <strong>Por Ejemplo</strong></p>
+
+                <article class="span__example">
+                    <h1>Pd</h1>
+                    <h4>+2 +4</h4>
+                </article>
+                <h3>+2 = Paladico <br> +4 = Paldioso</h3>
+                <p>En el caso del Paladio(Pd) tiene 2 numeros de oxidacion por lo que se aplicarian los sufijos de Menor-Mayor (ICO, OSO)</p>
+            </li>
+            <li id="slide4">
+                <h1>Estado de oxidacion: 3 MENOR-MEDIO-MAYOR</h1>
+                <p>Un elemento quimico puede tener muchos numeros de oxidacion, en el caso de que sean 3, se aplican los sufijos: ICO para el menor, OSO para el medio y para el mayor se utiliza tanto prefijo como sufijo y seria: HIPO- -OSO <br> <strong>Por Ejemplo</strong></p>
+                <article class="span__example">
+                    <h1>C</h1>
+                    <h4>+2 <span>+4</span></h4>
+                </article>
+                <h3>-4 = Carbonico <br> +2 = Carbonoso <br> +4 = Hipocarbonoso</h3>
+                <p>En el caso del Carbono(C) tiene tres numeros de oxidacion y por esto se aplicarian estos sufijos y prefijos.</p>
+                <div class="important">
+                    <p>Como puedes ver uno de los numeros de oxidacion tiene una linea abajo. Esto significa que ese numero hace un efecto de espejo. <br> En este caso si el +4 tiene la linea debajo, los numeros de oxidacion serian +4, -4 y +2</p>
+                </div>
+            </li>
+            <li id="slide5">
+                <h1>Estado de oxidacion: 4 o + <br> MENOR -  MEDIO MENOR - MEDIO MAYOR - MAYOR</h1>
+                <p>A partir de 4 o mas numeros de oxidacion se aplican los siguientes sufijos y prefijos:<br><strong>Menor = ICO<br>Medio Menor = OSO<br>Medio Mayor = HIPO- -OSO<br>Mayor = PER- -ICO </strong></p>
+                <p>Clorico(-1)<br>Cloroso(+1)<br>Perclorico(+3)<br>Hipocloroso(+5)<br>Hipocloroso(+7)</p>
+                <p>Si hay mas de dos numeros Mayores se utiliza el mismo prefijo y sufijo en los dos.</p>
+                <article class="span__example">
+                    <h1>Cl</h1>
+                    <h4><span>+1</span> +3 +5 +7</h4>
+                </article>
+            </li>
+            <li id="slide6">
+                <img src="./images/ijiji" alt="">
+            </li>
+            <li id="slide7">
+                <img src="./images/Tabla-con-nros-de-oxidacion-1-e1530195809116.png" alt="">
+            </li>
+        </ul>
+
+    </div>
+    <div class="slide__buttons">
+        <ul class="menu">
+            <li>
+                <a href="#slide1">1</a>
+            </li>
+            <li>
+                <a href="#slide2">2</a>
+            </li>          
+            <li>
+                <a href="#slide3">3</a>
+            </li>
+            <li>
+                <a href="#slide4">4</a>
+            </li>
+            <li>
+                <a href="#slide5">5</a>
+            </li>
+            <li>
+                <a href="#slide6">6</a>
+            </li>
+            <li>
+                <a href="#slide7">7</a>
+            </li>
+        </ul>
+    </div>
+
+    <section class="question__game">
+        <div class="question__title">
+            <h1>REPASO</h1>
+            <p>A la izquierda encontraras un elemento quimico con sus numeros de oxidacion. Haz click en la respuesta correcta de como serian sus respectivos nombres una vez se le apliquen los prefijos y sufijos explicados anteriormente.</p>
+        </div>
+        <div class="questions">
+            <div class="questions__answers">
+                Pt = PLATINO(+2 +4)
+                <button onclick="correct()" type="button" id="correct">
+                    <p>Platinico, Platinoso</p>
+                </button>
+                O
+                <button onclick="incorrect()" type="button" id="incorrect">
+                    <p>Platinio, Platoso</p>
+                </button>
+            </div>
+            <div class="questions__answers">
+                Sb =ANTIMONIO(<span>+3</span> +5)
+                <button onclick="incorrect()" type="button" id="correct">
+                    <p>Antimonico, Antimonoso, Hiperarmonico</p>
+                </button>
+                O
+                <button onclick="correct()" type="button" id="incorrect">
+                    <p>Antimonico, Antimonioso, Hipoarmonioso</p>
+                </button>
+            </div>
+            <div class="questions__answers">
+                Ca = Calcio(+2)
+                <button onclick="incorrect()" type="button" id="correct">
+                    <p>Calcioso</p>
+                </button>
+                O
+                <button onclick="correct()" type="button" id="incorrect">
+                    <p>Calcico</p>
+                </button>
+            </div>
+                <div class="questions__answers">
+                   Tc = TECNECIO(+4 +5 +6 +7)
+                    <button onclick="incorrect()" type="button" id="correct">
+                        <p>Tecnecico, Tecnecicoso, Pertecnecico, Hipotecnecioso</p>
+                    </button>
+                    O
+                    <button onclick="correct()" type="button" id="incorrect">
+                        <p>Tecnecico, Tecnecioso, Pertecnecico, Hipotecnecioso</p>
+                    </button>
+                </div>
+                <div class="questions__answers">
+                    Ni = Niquel(+2 +3)
+                     <button onclick="correct()" type="button" id="correct">
+                         <p>Niquelico, Niqueloso</p>
+                     </button>
+                     O
+                     <button onclick="incorrect()" type="button" id="incorrect">
+                         <p>Niquico, Nicoso</p>
+                     </button>
+                 </div>
+        </div>
+    </section>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
